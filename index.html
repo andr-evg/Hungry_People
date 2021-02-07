@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/styles.css">
+</head>
+
+<body>
+    <header>
+       <nav class="navbar navbar-expand-lg">
+            <div class="container position-relative">
+                <button id="nav-toggle-button" class="navbar-toggler active" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center text-uppercase font-weight-bold" id="navbarNav">
+                    <div id="nav-right" class="d-flex mr-header">
+                        <ul class="navbar-nav navbar-border-left">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section-about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section-team">Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section-book">Booking</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="nav-left" class="d-flex ml-header">
+                        <ul class="navbar-nav navbar-border-right">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section-menu">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section-gallery">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section-events">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section-contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>       
+                </div>
+        <!-- MOBILE SOCIAL -->
+                <div class="collapse w-100 text-center collapse-none-lg" id="navbarNav">
+                    <div class="d-flex justify-content-center">
+                        <a href="#"><div class="social-btn-bottom d-flex justify-content-center align-items-center"><i class="fab fa-facebook-f"></i></div></a>
+                        <a href="#"><div class="social-btn-bottom d-flex justify-content-center align-items-center mx-2"><i class="fab fa-twitter"></i></div></a>
+                        <a href="#"><div class="social-btn-bottom d-flex justify-content-center align-items-center"><i class="fab fa-instagram"></i></div></a>
+                    </div>
+                    <span class="text-muted">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</span>
+                </div>
+            </div>
+        </nav>
+        <!-- SOCIAL BOTTOM -->
+        <div class="d-none d-lg-flex flex-column sidebar-bottom">
+            <a href="#"><div class="social-btn-bottom d-flex justify-content-center align-items-center"><i class="fab fa-facebook-f"></i></div></a>
+            <a href="#"><div class="social-btn-bottom d-flex justify-content-center align-items-center my-3"><i class="fab fa-twitter"></i></div></a>
+            <a href="#"><div class="social-btn-bottom d-flex justify-content-center align-items-center"><i class="fab fa-instagram"></i></div></a>
+        </div>
+    </header>
+<!-- SECTION FIRST -->
+    <section class="first" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('src/img/header-bg.jpg');
+    background-size: cover; background-attachment: fixed; background-position: center; background-repeat: no-repeat;">
+        <div class="container h-100 position-relative text-white">
+            <div
+                class="row flex-column text-center justify-content-center align-items-center h-100 text-uppercase">
+                <h3 class="font-weight-bold letter-spacing">Restaurant</h3>
+                <h1>Hungry People</h1>
+                <div>
+                    <button class="button button-header m-2">Book Table</button>
+                    <button class="button button-header m-2">Explore</button>
+                </div>
+            </div>
+        <!-- SOCIAL ICONS -->
+            <div class="d-flex flex-column sidebar-right">
+                <a href="#"><div class="social-btn d-flex justify-content-center align-items-center"><i class="fab fa-facebook-f"></i></div></a>
+                <a href="#"><div class="social-btn d-flex justify-content-center align-items-center my-3"><i class="fab fa-twitter"></i></div></a>
+                <a href="#"><div class="social-btn d-flex justify-content-center align-items-center"><i class="fab fa-instagram"></i></div></a>
+            </div>
+        <!-- LEFT SIDEBAR -->
+            <div class="sidebar-left">
+                <div class="sidebar-text font-weight-bold">
+                    Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM
+                </div>
+            </div>
+        </div>
+        <!-- WHEEL -->
+        <div class="first-wheel navbar-borders">
+            <img src="src/img/header-wheel.svg">
+        </div>
+        <!-- ARROW -->
+        <div class="social-btn arrow-btn d-flex justify-content-center align-items-center">
+            <a href="#section-about">
+                <div class="arrow d-flex justify-content-center align-items-center">
+                    <i class="fas fa-angle-down"></i>
+                </div>
+            </a>
+        </div>
+    </section>
+<!-- SECTION ABOUT -->
+    <section id="section-about">
+        <div class="container pt-lg pb-lg">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center">
+                    <h2 class="text-uppercase">About Us</h2>
+                    <p class="font-weight-bold">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a,
+                        tempor magna.
+                    </p>
+                    <p>
+                        Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
+                        ligula. Sed dictum,
+                        enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem.
+                        Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-8 mx-auto">
+                    <div class="img img-right rounded-lg mx-auto">
+                        <img class="img-fluid rounded-lg" src="src/img/about-img.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- SECTION TEAM -->
+    <section class="section-bg text-white" id="section-team"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('src/img/team-bg.jpg');">
+        <div class="container pb-lg text-center">
+            <div class="row align-items-center">
+                <div class="col-12 pt-sm pb-sm">
+                    <h3 class="letter-spacing text-uppercase font-weight-bold">Our Team</h3>
+                </div>
+                <div class="col-lg-6 col-8 mx-auto">
+                    <div class="img img-left rounded-lg mx-auto">
+                        <img class="img-fluid rounded-lg" src="src/img/team-img.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="text-uppercase">Master Cheff</h2>
+                    <p class="font-weight-bold">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a,
+                        tempor magna.
+                    </p>
+                    <p>
+                        Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
+                        ligula. Sed dictum,
+                        enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem.
+                        Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- SECTION BOOKING -->
+    <section id="section-book">
+        <div class="container pt-lg">
+            <div class="row align-items-center text-center">
+                <div class="col-lg-6">
+                    <h2 class="text-uppercase">Book a Table</h2>
+                    <form>
+                        <div class="form-row">
+                            <div class="col-6 my-1">
+                                <input type="name" class="form" name="name" placeholder="Name">
+                            </div>
+                            <div class="col-6 my-1">
+                                <input type="email" class="form" name="email" placeholder="Email">
+                            </div>
+                            <div class="col-6 my-1">
+                                <input type="tel" class="form" name="phone" placeholder="Phone">
+                            </div>
+                            <div class="col-6 my-1">
+                                <select class="form" name="people" id="exampleFormControlSelect1">
+                                    <option>People</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="col-6 my-1">
+                                <input placeholder="Date" class="form" type="text" onfocus="(this.type='date')" id="date">
+                            </div>
+                            <div class="col-6 my-1">
+                                <select class="form" name="time" id="exampleFormControlSelect1">
+                                    <option>Time</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="col-12 mt-1 mb-3">
+                                <button type="submit" class="button button-main">Book Now</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-8 mx-auto">
+                    <div class="img img-right rounded-lg mx-auto">
+                        <img class="img-fluid rounded-lg" src="src/img/booking-img.jpg">
+                    </div>
+                </div>
+                <div class="col-12 pt-sm pb-sm grey-color">
+                    <h3>Mon - Fri: <b>8PM - 10PM</b>, Sat - Sun: <b>8PM - 3AM</b>, Phone: <b>+40 729 131
+                            637/+40 726 458 782</b></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- SECTION SPECIALTIES -->
+    <section class="section-bg text-white"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('src/img/special-bg.jpg');">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-12 pt-sm pb-sm">
+                    <h3 class="letter-spacing text-uppercase font-weight-bold">Specialties</h3>
+                </div>
+            </div>
+        </div>
+        <!-- CAROUSEL -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                </li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container pb-lg text-center">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-8 mx-auto">
+                                <div class="img img-left rounded-lg mx-auto">
+                                    <img class="img-fluid rounded-lg" src="src/img/special-img.jpg">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="text-uppercase">Chocolate Pancakes</h2>
+                                <p class="font-weight-bold">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Duis at velit maximus, molestie est a, tempor magna.
+                                </p>
+                                <p>
+                                    Integer ullamcorper neque eu purus euismod, ac faucibus
+                                    mauris posuere. Morbi non ultrices ligula. Sed dictum,
+                                    enim sed ullamcorper feugiat, dui odio vehicula eros, a
+                                    sollicitudin lorem quam nec sem.
+                                    Mauris tincidunt feugiat diam convallis pharetra. Nulla
+                                    facilisis semper laoreet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container pb-lg text-center">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-8 mx-auto">
+                                <div class="img img-left rounded-lg mx-auto">
+                                    <img class="img-fluid rounded-lg" src="src/img/special-img.jpg">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="text-uppercase">Chocolate Pancakes</h2>
+                                <p class="font-weight-bold">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Duis at velit maximus, molestie est a, tempor magna.
+                                </p>
+                                <p>
+                                    Integer ullamcorper neque eu purus euismod, ac faucibus
+                                    mauris posuere. Morbi non ultrices ligula. Sed dictum,
+                                    enim sed ullamcorper feugiat, dui odio vehicula eros, a
+                                    sollicitudin lorem quam nec sem.
+                                    Mauris tincidunt feugiat diam convallis pharetra. Nulla
+                                    facilisis semper laoreet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container pb-lg text-center">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-8 mx-auto">
+                                <div class="img img-left rounded-lg mx-auto">
+                                    <img class="img-fluid rounded-lg" src="src/img/special-img.jpg">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="text-uppercase">Chocolate Pancakes</h2>
+                                <p class="font-weight-bold">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Duis at velit maximus, molestie est a, tempor magna.
+                                </p>
+                                <p>
+                                    Integer ullamcorper neque eu purus euismod, ac faucibus
+                                    mauris posuere. Morbi non ultrices ligula. Sed dictum,
+                                    enim sed ullamcorper feugiat, dui odio vehicula eros, a
+                                    sollicitudin lorem quam nec sem.
+                                    Mauris tincidunt feugiat diam convallis pharetra. Nulla
+                                    facilisis semper laoreet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- SECTION MENU -->
+    <section id="section-menu">
+        <div class="container pt-lg pb-lg">
+            <div class="row">
+                <div class="col-lg-6 mx-auto text-center">
+                    <h2 class="text-uppercase">Delicious Menu</h2>
+                    <p class="font-weight-bold">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a,
+                        tempor magna.
+                    </p>
+                </div>
+            </div>
+            <div class="row filters filter-button-group justify-content-center d-none d-lg-block">
+                <ul class="col-12 mx-auto d-flex justify-content-center">
+                    <li data-filter="*" class="filter-item menu-link px-2 menu-link-active">All</li>
+                    <li data-filter=".soupe" class="filter-item menu-link px-2">Soupe</li>
+                    <li data-filter=".pizza" class="filter-item menu-link px-2">Pizza</li>
+                    <li data-filter=".pasta" class="filter-item menu-link px-2">Pasta</li>
+                    <li data-filter=".desert" class="filter-item menu-link px-2">Desert</li>
+                    <li data-filter=".wine" class="filter-item menu-link px-2">Wine</li>
+                    <li data-filter=".beer" class="filter-item menu-link px-2">Beer</li>
+                    <li data-filter=".drinks" class="filter-item menu-link px-2">Drinks</li>
+                </ul>
+            </div>
+            <div class="col-12">
+                <div class="dropdown d-block d-lg-none mb-2">
+                    <button class="button button-main button-dropdown dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        All
+                      </button>
+                    <div class="dropdown-menu filters filter-button-group" aria-labelledby="dropdownMenuLink">
+                      <a data-filter="*" class="filter-item dropdown-link" href="#section-menu">All</a>
+                      <a data-filter=".soupe" class="filter-item dropdown-link" href="#section-menu">Soupe</a>
+                      <a data-filter=".pizza" class="filter-item dropdown-link" href="#section-menu">Pizza</a>
+                      <a data-filter=".pasta" class="filter-item dropdown-link" href="#section-menu">Pasta</a>
+                      <a data-filter=".desert" class="filter-item dropdown-link" href="#section-menu">Desert</a>
+                      <a data-filter=".wine" class="filter-item dropdown-link" href="#section-menu">Wine</a>
+                      <a data-filter=".beer" class="filter-item dropdown-link" href="#section-menu">Beer</a>
+                      <a data-filter=".drinks" class="filter-item dropdown-link" href="#section-menu">Drinks</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="w-100 grid">
+                    <div class="col-12 col-sm-6 col-md-4 grid-item soupe my-2">
+                        <div class="text-menu-title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                        <div class="text-menu-subtitle">Integer ullamcorper neque eu purus euismod</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 grid-item soupe my-2">
+                        <div class="text-menu-title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                        <div class="text-menu-subtitle">Integer ullamcorper neque eu purus euismod</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 grid-item soupe my-2">
+                        <div class="text-menu-title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                        <div class="text-menu-subtitle">Integer ullamcorper neque eu purus euismod</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 grid-item pasta my-2">
+                        <div class="text-menu-title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                        <div class="text-menu-subtitle">Integer ullamcorper neque eu purus euismod</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 grid-item pasta my-2">
+                        <div class="text-menu-title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                        <div class="text-menu-subtitle">Integer ullamcorper neque eu purus euismod</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 grid-item pizza my-2">
+                        <div class="text-menu-title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                        <div class="text-menu-subtitle">Integer ullamcorper neque eu purus euismod</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 grid-item pizza my-2">
+                        <div class="text-menu-title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                        <div class="text-menu-subtitle">Integer ullamcorper neque eu purus euismod</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 grid-item pizza my-2">
+                        <div class="text-menu-title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                        <div class="text-menu-subtitle">Integer ullamcorper neque eu purus euismod</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 grid-item pizza my-2">
+                        <div class="text-menu-title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                        <div class="text-menu-subtitle">Integer ullamcorper neque eu purus euismod</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 grid-item wine drinks my-2">
+                        <div class="text-menu-title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                        <div class="text-menu-subtitle">Integer ullamcorper neque eu purus euismod</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 grid-item wine drinks my-2">
+                        <div class="text-menu-title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                        <div class="text-menu-subtitle">Integer ullamcorper neque eu purus euismod</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 grid-item wine drinks my-2">
+                        <div class="text-menu-title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                        <div class="text-menu-subtitle">Integer ullamcorper neque eu purus euismod</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 grid-item wine drinks my-2">
+                        <div class="text-menu-title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                        <div class="text-menu-subtitle">Integer ullamcorper neque eu purus euismod</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 grid-item beer drinks my-2">
+                        <div class="text-menu-title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                        <div class="text-menu-subtitle">Integer ullamcorper neque eu purus euismod</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 grid-item beer drinks my-2">
+                        <div class="text-menu-title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                        <div class="text-menu-subtitle">Integer ullamcorper neque eu purus euismod</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 grid-item beer drinks my-2">
+                        <div class="text-menu-title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                        <div class="text-menu-subtitle">Integer ullamcorper neque eu purus euismod</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 grid-item beer drinks my-2">
+                        <div class="text-menu-title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                        <div class="text-menu-subtitle">Integer ullamcorper neque eu purus euismod</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 grid-item drinks my-2">
+                        <div class="text-menu-title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                        <div class="text-menu-subtitle">Integer ullamcorper neque eu purus euismod</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 grid-item drinks my-2">
+                        <div class="text-menu-title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                        <div class="text-menu-subtitle">Integer ullamcorper neque eu purus euismod</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 grid-item drinks my-2">
+                        <div class="text-menu-title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                        <div class="text-menu-subtitle">Integer ullamcorper neque eu purus euismod</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 grid-item drinks my-2">
+                        <div class="text-menu-title">PIZZA QUATRO STAGIONI . . . . 55,68 USD</div>
+                        <div class="text-menu-subtitle">Integer ullamcorper neque eu purus euismod</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- SECTION PRIVATE -->
+    <section id="section-events" class="section-bg text-white"
+    style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('src/img/special-bg.jpg');">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-12 pt-sm pb-sm">
+                    <h3 class="letter-spacing text-uppercase font-weight-bold">Private Events</h3>
+                </div>
+
+                <div class="col-lg-6 col-8 mx-auto pb-sm">
+                    <div class="img img-left rounded-lg mx-auto">
+                        <div class="event-right">
+                            <div class="event-img-title text-uppercase text-left">Wedding</div>
+                        </div>
+                        <img class="img-fluid rounded-lg" src="src/img/private01-img.jpg">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-8 mx-auto pb-sm">
+                    <div class="img img-right rounded-lg mx-auto">
+                        <div class="event-left">
+                            <div class="event-img-title text-uppercase text-left">Corporate Parties</div>
+                        </div>
+                        <img class="img-fluid rounded-lg" src="src/img/private02-img.jpg">
+                    </div>
+                </div>
+
+                <div class="col-12 pb-sm white-transparent-color">
+                    <h3>For private events please call: <b>+40 729 131 637/+40 726 458 782</b> or use the contact form.</b></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- SECTION GALLERY -->
+    <section id="section-gallery">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 col-md-3 p-0 gallery-item" style="background: url('src/img/gallery01-img.jpg') 50% 50%; background-size: cover;"></div>
+                <div class="col-6 col-md-3 p-0 gallery-item" style="background: url('src/img/gallery02-img.jpg') 50% 50%; background-size: cover;"></div>
+                <div class="col-6 col-md-3 p-0 gallery-item" style="background: url('src/img/gallery03-img.jpg') 50% 50%; background-size: cover;"></div>
+                <div class="col-6 col-md-3 p-0 gallery-item" style="background: url('src/img/gallery04-img.jpg') 50% 50%; background-size: cover;"></div>
+            </div>
+        </div>
+    </section>
+<!-- SECTION CONTACT -->
+    <section id="section-contact">
+        <div class="container pb-lg pt-lg">
+            <div class="row">
+                <div class="col-lg-6 mx-auto text-center">
+                    <h2 class="text-uppercase">Contact</h2>
+                    <p class="font-weight-bold">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a,
+                        tempor magna.
+                    </p>
+                </div>
+            </div>
+            <form>
+                <div class="form-row">
+                    <div class="col-md-4 my-1">
+                        <input type="name" class="form" name="name" placeholder="Name">
+                    </div>
+                    <div class="col-md-4 my-1">
+                        <input type="email" class="form" name="email" placeholder="Email">
+                    </div>
+                    <div class="col-md-4 my-1">
+                        <input type="tel" class="form" name="tel" placeholder="Phone">
+                    </div>
+                    <div class="col-md-12 my-1">
+                        <textarea rows="3" class="form" name="message" placeholder="Message"></textarea>
+                    </div>
+                    <div class="col-md-6 my-1 d-flex text-center align-items-center">
+                        <div class="contacts-text"><i class="fas fa-map-marker-alt"></i> 5th London Boulevard, U.K. <i class="fas fa-phone"></i> +40 729 131 637/+40 726 458 782 <i class="fas fa-envelope"></i> office@mindblister.com</div>
+                    </div>
+                    <div class="col-md-6 my-1">
+                        <button class="button button-main" type="submit">Send Message</button>
+                    </div>
+                </div>
+            </form>        
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d40652.58314981066!2d30.4994237!3d50.4450783!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1609331934886!5m2!1sen!2sua" width="100%" height="350px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </section>
+<!-- FOOTER -->
+    <footer class="footer d-flex justify-content-center align-items-center pt-sm pb-sm">
+        <div><i class="far fa-copyright"></i> Copyright <b>Mindblister</b> 2019</div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>
